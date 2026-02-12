@@ -2,7 +2,7 @@
 
 A Property Management System (PMS) backend built with Django, following strict architectural guidelines for inventory correctness and transactional integrity.
 
-## 🏗️ Architecture
+##  Architecture
 
 ### Apps Structure
 
@@ -40,7 +40,6 @@ apps/
    - No booking logic
    - Live dashboards only
 
-## 🚀 Quick Start
 
 ### Prerequisites
 
@@ -99,7 +98,7 @@ After creating properties and room types in admin:
 python scripts/bootstrap_inventory.py
 ```
 
-## 🐳 Docker Setup
+## Docker Setup
 
 ### Using Docker Compose
 
@@ -145,13 +144,13 @@ docker-compose exec web python manage.py createsuperuser
 - `ws://localhost:8001/ws/inventory/` - Live inventory dashboard
 - `ws://localhost:8001/ws/reservations/` - Live reservation feed
 
-## 🧪 Testing
+## Testing
 
 ```bash
 pytest
 ```
 
-## 📝 Environment Variables
+## Environment Variables
 
 Create `.env` file:
 
@@ -179,13 +178,13 @@ CELERY_RESULT_BACKEND=redis://localhost:6379/0
 KAFKA_BOOTSTRAP_SERVERS=localhost:9092
 ```
 
-## 🔐 Security
+## Security
 
 - Custom User model with email authentication
 - JWT tokens for API authentication
 - Role-based access: `SUPER_ADMIN`, `PROPERTY_ADMIN`, `STAFF`
 
-## 📊 Database Models
+## Database Models
 
 ### Core Models
 
@@ -196,7 +195,7 @@ KAFKA_BOOTSTRAP_SERVERS=localhost:9092
 - **ReservationRoom** - Room allocations
 - **RatePlan** / **DailyRate** - Pricing
 
-## 🛠️ Development
+## Development
 
 ### Code Style
 
@@ -217,7 +216,7 @@ python manage.py migrate
 
 Access at: http://localhost:8000/admin
 
-## 📚 Technology Stack
+## Technology Stack
 
 - **Framework**: Django 5.1.7
 - **API**: Django REST Framework
@@ -228,7 +227,7 @@ Access at: http://localhost:8000/admin
 - **Events**: Kafka (optional)
 - **Auth**: JWT (Simple JWT)
 
-## ⚠️ Critical Rules
+## Critical Rules
 
 1. **Never** async write to inventory
 2. **Always** use transactions for inventory updates
@@ -246,10 +245,8 @@ For detailed architectural decisions and design patterns, see the inline documen
 - `apps/events/producer.py` - Event publishing
 - `apps/common/transactions.py` - Transaction helpers
 
-## 🤝 Contributing
-
-This project follows strict architectural guidelines. Any deviation is considered a bug.
 
 ## 📄 License
 
 Proprietary - All Rights Reserved
+
