@@ -1,0 +1,33 @@
+# Kafka Topics Configuration
+# Format: TOPIC_KEY=topic.name
+# Lines starting with # are ignored
+
+# Inventory Topics
+INVENTORY_INITIALIZED=pms.inventory.initialized
+INVENTORY_BLOCKED=pms.inventory.blocked
+INVENTORY_RELEASED=pms.inventory.released
+INVENTORY_ADJUSTED=pms.inventory.adjusted
+INVENTORY_RESERVED=pms.inventory.reserved
+INVENTORY_CONFLICT_DETECTED=pms.inventory.conflict_detected
+INVENTORY_UPDATED=pms.inventory.updated
+
+# Reservation Topics
+RESERVATION_CREATED=pms.reservation.created
+RESERVATION_CANCELLED=pms.reservation.cancelled
+
+# User/Authentication Topics
+USER_REGISTERED=pms.user.registered
+USER_LOGGED_IN=pms.user.logged_in
+PASSWORD_CHANGED=pms.user.password_changed
+PASSWORD_RESET_REQUESTED=pms.user.password_reset_requested
+
+# Property Topics
+PROPERTY_CREATED=pms.property.created
+PROPERTY_UPDATED=pms.property.updated
+PROPERTY_STATUS_CHANGED=pms.property.status_changed
+PROPERTY_DELETED=pms.property.deleted
+
+# RoomType Topics
+ROOMTYPE_CREATED=pms.roomtype.created
+ROOMTYPE_UPDATED=pms.roomtype.updated
+ROOMTYPE_DELETED=pms.roomtype.deleted
